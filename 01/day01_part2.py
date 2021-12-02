@@ -9,7 +9,7 @@ previous_window = depths[prev_window_start] + depths[prev_window_start + 1] + de
 
 for current_depth in depths[3:]:
     sliding_window = depths[prev_window_start+1] + depths[prev_window_start + 2] + current_depth
-    print(f"current sliding window total = {sliding_window}m"
+    print(f"current sliding window total = {sliding_window}units"
           f"previous window was {previous_window}")
     if sliding_window > previous_window:
         count += 1

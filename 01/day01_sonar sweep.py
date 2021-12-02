@@ -10,7 +10,7 @@ depths = data.Depths.tolist()
 count = 0
 i = 0
 for current_depth in depths[1:]:
-    print(f"current_depth = {current_depth}m, previous datapoint was {depths[i]}m")
+    print(f"current_depth = {current_depth}m, previous datapoint was {depths[i]}units")
     if current_depth > depths[i]:
         count += 1
         print(f"depth increased, total increases: {count}")
